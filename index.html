@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Chris Onchari Ondieki — Full-Stack Developer & Web3 Enthusiast</title>
+  <meta name="description" content="Full-stack JavaScript developer based in Nairobi, Kenya. Building with React, Node.js, Firebase, and Solidity. Pursued Computer Science at Maseno University.">
+  <meta name="author" content="Chris Onchari Ondieki">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chris Onchari Ondieki — Full-Stack Developer">
+  <meta property="og:description" content="Full-stack JavaScript developer based in Nairobi, Kenya. Building with React, Node.js, Firebase, and Solidity.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon (emoji fallback) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="#hero" class="nav-logo" aria-label="Home">chris.dev</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hi, I'm Chris Onchari Ondieki</p>
+          <h1>Full-Stack Developer<br>& Web3 Enthusiast</h1>
+          <p class="hero-subtitle">
+            I build practical, user-focused web applications with JavaScript, React, and Node.js — and I'm currently expanding into decentralized applications with Solidity and Ethereum.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            <a href="resume.pdf" class="btn btn-outline" download aria-label="Download resume PDF">↓ Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
+    <section id="projects" class="fade-in">
+      <div class="container">
+        <p class="section-label">Featured Work</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">
+          Real-world applications I've designed and built end-to-end, from database schemas to deployed production interfaces.
+        </p>
+
+        <div class="projects-grid fade-in-stagger">
+          <!-- SmartRent -->
+          <article class="project-card" id="project-smartrent">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🏠</span>
+              <div class="project-links">
+                <a href="https://smart-rent-5fe3d.web.app" target="_blank" rel="noopener noreferrer" aria-label="SmartRent live site">
+                  ↗ Live
+                </a>
+                <a href="https://github.com/csia77/Smartrent" target="_blank" rel="noopener noreferrer" aria-label="SmartRent GitHub repository">
+                  ⌨ Code
+                </a>
+              </div>
+            </div>
+            <h3>SmartRent</h3>
+            <p>
+              A full-stack rental management platform for landlords and tenants. Features role-based dashboards, rent tracking, payment approvals, maintenance requests, announcements, and real-time data sync. Built initially with Vanilla JS and Firebase, with a React + Node.js/Express/MongoDB version in development.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Firebase</span>
+              <span>MongoDB</span>
+            </div>
+          </article>
+
+          <!-- Lynpark Academy -->
+          <article class="project-card" id="project-lynpark">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🏫</span>
+              <div class="project-links">
+                <a href="https://csia77.github.io/Lynpark_Academy_App/" target="_blank" rel="noopener noreferrer" aria-label="Lynpark Academy live site">
+                  ↗ Live
+                </a>
+                <a href="https://github.com/csia77/Lynpark_Academy_App" target="_blank" rel="noopener noreferrer" aria-label="Lynpark Academy GitHub repository">
+                  ⌨ Code
+                </a>
+              </div>
+            </div>
+            <h3>Lynpark Academy App</h3>
+            <p>
+              Official marketing website for Lynpark Learning Centre, a primary school in Nyamira, Kenya. Includes a responsive photo gallery with lightbox, hero slider, contact form, and scroll animations — all built without frameworks.
+            </p>
+            <div class="project-tech">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>GitHub Pages</span>
+            </div>
+          </article>
+
+          <!-- Web3 Coming Soon -->
+          <article class="project-card coming-soon" id="project-web3">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">⛓️</span>
+              <span class="coming-soon-badge">Coming Soon</span>
+            </div>
+            <h3>Web3 DApp</h3>
+            <p>
+              Currently building with Solidity and Ethereum. Exploring smart contract development, DeFi protocols, and decentralized application architecture. Stay tuned.
+            </p>
+            <div class="project-tech">
+              <span>Solidity</span>
+              <span>Ethereum</span>
+              <span>Hardhat</span>
+              <span>Ethers.js</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+    <section id="skills" class="fade-in">
+      <div class="container">
+        <p class="section-label">Tech Stack</p>
+        <h2 class="section-title">Skills & Tools</h2>
+
+        <div class="skills-categories fade-in-stagger">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skills-grid">
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">HTML5</span>
+              <span class="skill-pill">CSS3</span>
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skills-grid">
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Express</span>
+              <span class="skill-pill">Firebase</span>
+              <span class="skill-pill">Firestore</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Web3</h3>
+            <div class="skills-grid">
+              <span class="skill-pill">Solidity</span>
+              <span class="skill-pill">Ethereum</span>
+              <span class="skill-pill">Hardhat</span>
+              <span class="skill-pill">Ethers.js</span>
+              <span class="skill-pill">Smart Contracts</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skills-grid">
+              <span class="skill-pill">Git & GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Firebase CLI</span>
+              <span class="skill-pill">npm</span>
+              <span class="skill-pill">Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section id="about" class="fade-in">
+      <div class="container">
+        <p class="section-label">Background</p>
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I pursued Computer Science at Maseno University and have built a strong focus on full-stack web development. I enjoy turning ideas into working products — from database design and API architecture to polished, responsive user interfaces.
+            </p>
+            <p>
+              My recent work includes building rental management systems with Firebase and school websites that serve real communities in Kenya. I care about writing clean, maintainable code that solves real problems for real users.
+            </p>
+            <p>
+              Right now, I'm expanding into the Web3 space — learning Solidity, working with smart contracts, and exploring decentralized application patterns. My goal is to bridge traditional full-stack skills with blockchain technology to build secure, transparent systems.
+            </p>
+          </div>
+
+          <div class="about-details fade-in-stagger">
+            <div class="about-detail">
+              <span class="about-detail-label">Location</span>
+              <span class="about-detail-value">Nairobi, Kenya</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Education</span>
+              <span class="about-detail-value">Computer Science — Maseno University</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Focus</span>
+              <span class="about-detail-value">Full-Stack JavaScript · Web3 / Solidity</span>
+            </div>
+            <div class="about-detail">
+              <span class="about-detail-label">Status</span>
+              <span class="about-detail-value">Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section id="contact" class="fade-in">
+      <div class="container">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-content">
+          <p>
+            I'm always open to discussing new projects, collaborations, or opportunities. Reach out via any of the channels below.
+          </p>
+
+          <div class="contact-links fade-in-stagger">
+            <a href="mailto:chrisonchari5677@gmail.com" class="contact-link" id="contact-email">
+              <span class="contact-link-icon" aria-hidden="true">✉</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">chrisonchari5677@gmail.com</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/csia77" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-github">
+              <span class="contact-link-icon" aria-hidden="true">⌨</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/csia77</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/chris-ondieki-35366621b/" target="_blank" rel="noopener noreferrer" class="contact-link" id="contact-linkedin">
+              <span class="contact-link-icon" aria-hidden="true">💼</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">Chris Ondieki</span>
+              </div>
+            </a>
+
+            <a href="tel:+254113874989" class="contact-link" id="contact-phone">
+              <span class="contact-link-icon" aria-hidden="true">📞</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+254 113 874 989</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">© 2026 Chris Onchari Ondieki</p>
+      <div class="footer-links">
+        <a href="https://github.com/csia77" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/chris-ondieki-35366621b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:chrisonchari5677@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+</body>
+</html>
